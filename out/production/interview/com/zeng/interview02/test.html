@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+//考察js；
+<ul>
+    <li>click me</li><li>click me</li><li>click me</li><li>click me</li>
+</ul>
+    <script type="text/javascript">
+        // alert("Hello World!");
+        // var vAlert={};
+        // vAlert.show=function(msg){
+        //     alert(msg);
+        // }
+        // vAlert.show("测试");
+        var elements = document.getElementsByTagName('li');
+        var length = elements.length;
+        //当打开页面就执行到4，之后一直是4；
+        for(var i = 0;i < length;i++){
+            elements[i].onclick=function(){
+                alert(i);
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
