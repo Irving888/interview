@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title></title>
+    <!--JS代码需要编写到script标签中-->
+    <script>
+        for(let i=0;i<2;i++){   //var定义的是块作用域；
+            setTimeout(function(){
+                    console.log(i)
+                },100
+            );
+        }
+        for(var i=0;i<2;i++){
+            setTimeout(function(){  //var定义的是函数作用域；
+                    console.log(i)
+                },100
+            );
+        }
+    </script>
+</head>
+<body>
+
+<center></center>
+<pre></pre>
+<img></img>
+<div style="color:red; text-color:blue;">
+    <span style="color:green;text-color:black;">Hello</span>
+</div>
+
+<ul><ol><li>item 1</li></ol></ul>
+<table>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    <tr>
+</table>
+<p><ul><li>Item 1</li></ul></p>
+<a href="/"><p>Some Text</p></a>
+
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+
+</body>
+</html>
